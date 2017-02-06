@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/IntroText"
+            android:text="@string/intro_text"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_robots" />
+
+        <EditText
+            android:id="@+id/answer_robots"
+            style="@style/Hint"
+            android:hint="@string/hint_edit_view" />
+
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_cancer_treatment" />
+
+        <CheckBox
+            android:id="@+id/checkbox1Q2"
+            style="@style/IconList"
+            android:text="@string/answer1_cancer_treatment" />
+
+        <CheckBox
+            android:id="@+id/checkbox2Q2"
+            style="@style/IconList"
+            android:text="@string/answer2_cancer_treatment" />
+
+        <CheckBox
+            android:id="@+id/checkbox3Q2"
+            style="@style/IconList"
+            android:layout_marginBottom="24dp"
+            android:text="@string/answer3_cancer_treatment" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Question"
+            android:text="@string/question_cryptocurrency" />
+
+        <CheckBox
+            android:id="@+id/checkbox1Q3"
+            style="@style/IconList"
+            android:text="@string/answer1_cryptocurrency" />
+
+        <CheckBox
+            android:id="@+id/checkbox2Q3"
+            style="@style/IconList"
+            android:text="@string/answer2_cryptocurrency" />
+
+        <CheckBox
+            android:id="@+id/checkbox3Q3"
+            style="@style/IconList"
+            android:layout_marginBottom="24dp"
+            android:text="@string/answer3_cryptocurrency" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question_translation" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radiobutton1Q4"
+                style="@style/IconList"
+                android:text="@string/answer1_translation" />
+
+            <RadioButton
+                android:id="@+id/radiobutton2Q4"
+                style="@style/IconList"
+                android:text="@string/answer2_translation" />
+
+            <RadioButton
+                android:id="@+id/radiobutton3Q4"
+                style="@style/IconList"
+                android:layout_marginBottom="24dp"
+                android:text="@string/answer3_translation" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#E040FB"
+                android:onClick="submitAnswers"
+                android:text="@string/submit_answers_button"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
