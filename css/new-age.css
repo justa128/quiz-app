@@ -449,3 +449,19 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+.email-field {
+    border-radius: 300px;
+    padding-left: 12px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    color: #333333;
+    border: none;
+    padding: 12px 25px 12px 19px;
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+@media (min-width: 768px) {
+  .email-field {
+    padding-right: 200px;
+    font-size: 19px;
+   }
+ }
