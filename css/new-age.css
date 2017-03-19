@@ -426,6 +426,7 @@ footer ul li a.active {
 .btn-xl {
   padding: 15px 45px;
   font-size: 11px;
+  background-color: transparent;
 }
 ::-moz-selection {
   color: white;
