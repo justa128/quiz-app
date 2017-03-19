@@ -425,9 +425,16 @@ footer ul li a.active {
 }
 .btn-xl {
   padding: 15px 45px;
-  font-size: 11px;
+  font-size: 15px;
   background-color: transparent;
+  width: 70%;
 }
+@media (max-width: 767px) {
+	.btn-xl {
+		width: 90%;
+	}
+}
+
 ::-moz-selection {
   color: white;
   text-shadow: none;
@@ -455,13 +462,23 @@ body {
     font-family: Lato,Helvetica,Arial,sans-serif;
     color: #333333;
     border: none;
-    padding: 12px 25px 12px 19px;
-    margin-bottom: 28px;
+    padding: 12px 19px 12px 19px;
+    width: 90%;
+    margin-bottom: 20px;
     font-size: 15px;
 }
 @media (min-width: 768px) {
   .email-field {
-    padding-right: 200px;
+    margin-bottom: 28px;
     font-size: 19px;
+    width: 70%;
+   }
+   .mobile-only {
+   	display: none;
+   }
+ }
+ @media (max-width: 767px) {
+  .email-field {
+    text-align: center;
    }
  }
