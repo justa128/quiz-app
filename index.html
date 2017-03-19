@@ -26,6 +26,9 @@
 
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,7 +77,20 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfTk4Mq8oeLWZxzFqAvYy_ZoTqsO3yZT8w2ybOyztFdmplQ_g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+  <input type="email" name="entry.232219261" required id="entry.232219261" placeholder="Email address..." style="color:#333333; font-family: Lato,Helvetica,Arial,sans-serif;"><br>
+  <input type="submit" value="Submit" class="btn btn-outline btn-xl">
+</form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+
+                           
                         </div>
                     </div>
                 </div>
